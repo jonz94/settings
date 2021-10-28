@@ -14,6 +14,9 @@ const Navbar = () => {
           <Link href="/vscode">
             <a className="btn btn-ghost btn-sm rounded-btn">vscode</a>
           </Link>
+          <Link href="/windows-terminal">
+            <a className="btn btn-ghost btn-sm rounded-btn">windows terminal</a>
+          </Link>
         </div>
       </div>
       <div className="flex-none">

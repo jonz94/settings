@@ -1,8 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-
-export interface VSCodeData {
-  settingsJson: string
-}
+import { SettingsJsonData } from '../../interfaces/settingsJsonData'
 
 const settingsJson = `{
   // disable navigation breadcrumbs
@@ -236,7 +233,7 @@ const settingsJson = `{
 
 export default function handler(
   _req: NextApiRequest,
-  res: NextApiResponse<VSCodeData>,
+  res: NextApiResponse<SettingsJsonData>,
 ) {
   res.status(200).json({ settingsJson })
 }

@@ -5,7 +5,7 @@ import { getHighlighter, setCDN } from 'shiki'
 import { SettingsJsonData } from '../interfaces/settingsJsonData'
 
 async function fetchData() {
-  const response = await fetch('/api/vscode')
+  const response = await fetch('/api/windows-terminal')
   const data = (await response.json()) as SettingsJsonData
   return data.settingsJson
 }
@@ -15,7 +15,7 @@ async function getShikiHighlighter() {
   return getHighlighter({ theme: 'one-dark-pro', langs: ['jsonc'] })
 }
 
-const VSCodePage: NextPage = () => {
+const WindowsTerminalPage: NextPage = () => {
   const [settingsJson, setSettingsJson] = useState('')
 
   useEffect(() => {
@@ -29,14 +29,14 @@ const VSCodePage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>VSCode Settings | Notes by jonz94</title>
-        <meta name="description" content="jonz94's vscode setting" />
+        <title>Windows Terminal Settings | Notes by jonz94</title>
+        <meta name="description" content="jonz94's windows terminal setting" />
       </Head>
 
       <div className="hero-content">
         <div className="flex flex-col">
           <h1 className="text-center mb-5 text-5xl font-bold">
-            VSCode Settings
+            Windows Terminal Settings
           </h1>
           <p className="text-center mb-5 text-xl">settings.json</p>
           <div
@@ -49,4 +49,4 @@ const VSCodePage: NextPage = () => {
   )
 }
 
-export default VSCodePage
+export default WindowsTerminalPage
