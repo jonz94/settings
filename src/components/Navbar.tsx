@@ -4,13 +4,12 @@ const Navbar = () => {
   return (
     <nav className="m-4 shadow-lg navbar bg-neutral text-neutral-content rounded-box">
       <div className="flex-none px-2 mx-2">
-        <span className="text-lg font-bold text-primary">Notes</span>
+        <Link href="/">
+          <a className="text-lg font-bold text-primary">Settings</a>
+        </Link>
       </div>
       <div className="flex-1 px-2 mx-2">
         <div className="hidden sm:flex items-stretch">
-          <Link href="/">
-            <a className="btn btn-ghost btn-sm rounded-btn">home</a>
-          </Link>
           <Link href="/vscode">
             <a className="btn btn-ghost btn-sm rounded-btn">vscode</a>
           </Link>

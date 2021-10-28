@@ -7,8 +7,8 @@ export default function Layout({ children }: PropsWithChildren<{}>) {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
-        <title>Notes by jonz94</title>
-        <meta name="description" content="notes by jonz94" />
+        <title>Settings by jonz94</title>
+        <meta name="description" content="settings by jonz94" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -29,7 +29,7 @@ const WindowsTerminalPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Windows Terminal Settings | Notes by jonz94</title>
+        <title>Windows Terminal Settings | Settings by jonz94</title>
         <meta name="description" content="jonz94's windows terminal setting" />
       </Head>
 

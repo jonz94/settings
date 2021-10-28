@@ -29,7 +29,7 @@ const VSCodePage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>VSCode Settings | Notes by jonz94</title>
+        <title>VSCode Settings | Settings by jonz94</title>
         <meta name="description" content="jonz94's vscode setting" />
       </Head>
 
