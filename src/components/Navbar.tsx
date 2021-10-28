@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Navbar = () => {
   return (
     <nav className="m-4 shadow-lg navbar bg-neutral text-neutral-content rounded-box">
@@ -6,10 +8,12 @@ const Navbar = () => {
       </div>
       <div className="flex-1 px-2 mx-2">
         <div className="hidden sm:flex items-stretch">
-          <a className="btn btn-ghost btn-sm rounded-btn">Home</a>
-          <a className="btn btn-ghost btn-sm rounded-btn">Portfolio</a>
-          <a className="btn btn-ghost btn-sm rounded-btn">About</a>
-          <a className="btn btn-ghost btn-sm rounded-btn">Contact</a>
+          <Link href="/">
+            <a className="btn btn-ghost btn-sm rounded-btn">home</a>
+          </Link>
+          <Link href="/vscode">
+            <a className="btn btn-ghost btn-sm rounded-btn">vscode</a>
+          </Link>
         </div>
       </div>
       <div className="flex-none">
