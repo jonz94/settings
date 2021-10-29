@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { getHighlighter, setCDN } from 'shiki'
+import CodeBlock from '../components/CodeBlock'
 import { SettingsJsonData } from '../interfaces/settingsJsonData'
 
 async function fetchData() {
@@ -33,21 +34,13 @@ const WindowsTerminalPage: NextPage = () => {
         <meta name="description" content="jonz94's windows terminal setting" />
       </Head>
 
-      <div className="hero-content">
-        <div className="flex flex-col">
+      <div className="p-0 w-full md:p-4 hero-content">
+        <div className="flex flex-col w-full">
           <h1 className="text-center mb-5 text-5xl font-bold">
             Windows Terminal Settings
           </h1>
           <p className="text-center mb-5 text-xl">settings.json</p>
-          <div
-            className={`${
-              settingsJson ? '' : 'hidden'
-            } mx-auto whitespace-pre-wrap text-xl`}
-            dangerouslySetInnerHTML={{ __html: settingsJson }}
-          ></div>
-          <div className={settingsJson ? 'hidden' : ''}>
-            <pre className="shiki"></pre>
-          </div>
+          <CodeBlock settingsJson={settingsJson} />
         </div>
       </div>
     </>
