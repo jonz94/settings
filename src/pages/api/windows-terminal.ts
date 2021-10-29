@@ -41,8 +41,8 @@ const settingsJson = `{
 
         // starting at wsl's user home directory
         // there are several ways to make it works
-        "startingDirectory": "\\\\wsl$\\Arch\\home\\jonz94",
-        // "startingDirectory": "\\\\wsl.localhost\\Arch\\home\\jonz94",
+        "startingDirectory": "\\\\\\\\wsl$\\\\Arch\\\\home\\\\jonz94",
+        // "startingDirectory": "\\\\\\\\wsl.localhost\\\\Arch\\\\home\\\\jonz94",
         // "commandline": "wsl.exe -d Arch --cd ~",
 
         "icon": "E:\\\\Pictures\\\\logos\\\\archwsl-StoreLogo.png"
@@ -54,8 +54,8 @@ const settingsJson = `{
 
         // starting at wsl's user home directory
         // there are several ways to make it works
-        "startingDirectory": "\\\\wsl$\\Ubuntu\\home\\jonz94",
-        // "startingDirectory": "\\\\wsl.localhost\\Ubuntu\\home\\jonz94",
+        "startingDirectory": "\\\\\\\\wsl$\\\\Ubuntu\\\\home\\\\jonz94",
+        // "startingDirectory": "\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\jonz94",
         // "commandline": "wsl.exe -d Ubuntu --cd ~",
 
         "icon": "E:\\\\Pictures\\\\logos\\\\ubuntu-favicon.png"
