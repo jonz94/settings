@@ -36,10 +36,10 @@ const WindowsTerminalPage: NextPage = () => {
 
       <div className="p-0 w-full md:p-4 hero-content">
         <div className="flex flex-col w-full">
-          <h1 className="text-center mb-5 text-5xl font-bold">
+          <h1 className="mb-5 text-5xl font-bold text-center">
             Windows Terminal Settings
           </h1>
-          <p className="text-center mb-5 text-xl">settings.json</p>
+          <p className="mb-5 text-xl text-center">settings.json</p>
           <CodeBlock settingsJson={settingsJson} />
         </div>
       </div>
