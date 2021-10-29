@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 pre.shiki {
-  @apply p-8 rounded-lg whitespace-pre-wrap;
+  @apply p-8 rounded-lg whitespace-pre-wrap min-w-[80rem] min-h-screen bg-[#282c34];
 }

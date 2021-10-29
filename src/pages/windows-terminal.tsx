@@ -40,9 +40,14 @@ const WindowsTerminalPage: NextPage = () => {
           </h1>
           <p className="text-center mb-5 text-xl">settings.json</p>
           <div
-            className="mx-auto whitespace-pre-wrap text-xl"
+            className={`${
+              settingsJson ? '' : 'hidden'
+            } mx-auto whitespace-pre-wrap text-xl`}
             dangerouslySetInnerHTML={{ __html: settingsJson }}
           ></div>
+          <div className={settingsJson ? 'hidden' : ''}>
+            <pre className="shiki"></pre>
+          </div>
         </div>
       </div>
     </>
