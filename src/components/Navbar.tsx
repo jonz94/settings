@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import { FC } from 'react'
 
-const Navbar = () => {
+const Navbar: FC = () => {
   return (
     <nav className="m-4 shadow-lg navbar bg-neutral text-neutral-content rounded-box">
       <div className="flex-none px-2 mx-2">

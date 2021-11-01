@@ -1,8 +1,10 @@
-interface CodeBlockProps {
+import { FC } from 'react'
+
+interface Props {
   settingsJson: string
 }
 
-const CodeBlock = (props: CodeBlockProps) => {
+const CodeBlock: FC<Props> = (props) => {
   const isLoading = props.settingsJson === ''
 
   return (

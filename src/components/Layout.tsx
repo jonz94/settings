@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import { PropsWithChildren } from 'react'
+import { FC } from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 
-export default function Layout({ children }: PropsWithChildren<{}>) {
+const Layout: FC = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
@@ -18,3 +18,5 @@ export default function Layout({ children }: PropsWithChildren<{}>) {
     </div>
   )
 }
+
+export default Layout
