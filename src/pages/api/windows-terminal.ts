@@ -2,15 +2,16 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { SettingsJsonData } from '../../interfaces/settingsJsonData'
 
 const settingsJson = `{
+  "$help": "https://aka.ms/terminal-documentation",
   "$schema": "https://aka.ms/terminal-profiles-schema",
 
-  // Open arch wsl as extra tab when opening windows terminal
+  // open arch wsl as extra tab when opening windows terminal
   // "startupActions": "; new-tab -p Arch",
 
-  // If enabled, selections are automatically copied to your clipboard.
+  // if enabled, selections are automatically copied to your clipboard.
   "copyOnSelect": false,
 
-  // If enabled, formatted data is also copied to your clipboard
+  // if enabled, formatted data is also copied to your clipboard
   "copyFormatting": false,
 
   // Windows PowerShell Core
@@ -45,6 +46,7 @@ const settingsJson = `{
         // "startingDirectory": "\\\\\\\\wsl.localhost\\\\Arch\\\\home\\\\jonz94",
         // "commandline": "wsl.exe -d Arch --cd ~",
 
+        // https://raw.githubusercontent.com/yuk7/ArchWSL/43c386cda08f4c6c6fec8d275f33fe457cc50648/wsldl-AppX/images/StoreLogo.png
         "icon": "E:\\\\Pictures\\\\logos\\\\archwsl-StoreLogo.png"
       },
       {
@@ -58,6 +60,7 @@ const settingsJson = `{
         // "startingDirectory": "\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\jonz94",
         // "commandline": "wsl.exe -d Ubuntu --cd ~",
 
+        // https://assets.ubuntu.com/v1/49a1a858-favicon-32x32.png
         "icon": "E:\\\\Pictures\\\\logos\\\\ubuntu-favicon.png"
       },
       {
@@ -81,8 +84,8 @@ const settingsJson = `{
     ]
   },
 
-  // Add custom color schemes to this array.
-  // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
+  // custom colorschemes
+  // see: https://aka.ms/terminal-color-schemes
   "schemes": [
     {
       "background": "#121212",
@@ -109,16 +112,15 @@ const settingsJson = `{
     }
   ],
 
-  // Add custom actions and keybindings to this array.
-  // To unbind a key combination from your defaults.json, set the command to "unbound".
-  // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
+  // custom keybindings
+  // see: https://aka.ms/terminal-keybindings
   "actions": [
-    // Press Ctrl+Shift+F to open the search box
+    // open search box
     {
       "command": "find",
       "keys": "ctrl+shift+f"
     },
-    // New pane
+    // create new pane, and put it below to the current pane
     {
       "command": {
         "action": "splitPane",
@@ -127,6 +129,7 @@ const settingsJson = `{
       },
       "keys": "alt+shift+d"
     },
+    // create new pane, and put it on the right side of the current pane
     {
       "command": {
         "action": "splitPane",
@@ -134,6 +137,22 @@ const settingsJson = `{
         "splitMode": "duplicate"
       },
       "keys": "alt+d"
+    },
+    // focus on previous pane
+    {
+      "command": {
+        "action": "moveFocus",
+        "direction": "previousInOrder"
+      },
+      "keys": "alt+["
+    },
+    // focus on next pane
+    {
+      "command": {
+        "action": "moveFocus",
+        "direction": "nextInOrder"
+      },
+      "keys": "alt+]"
     }
   ]
 }
