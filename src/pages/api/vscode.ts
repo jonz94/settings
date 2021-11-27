@@ -10,7 +10,7 @@ const settingsJson = `{
 
   // main
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.fontFamily": "'Sarasa Mono TC', 'Sarasa Nerd Font', 'Apple Color Emoji'",
+  "editor.fontFamily": "'Sarasa Mono TC', 'Sarasa Mono TC Nerd Font', 'Apple Color Emoji'",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
@@ -45,7 +45,7 @@ const settingsJson = `{
   },
 
   // terminal font
-  "terminal.integrated.fontFamily": "'Sarasa Mono TC', 'Sarasa Nerd Font', 'Segoe UI Emoji', 'Noto Sans Mono CJK TC'",
+  "terminal.integrated.fontFamily": "'Sarasa Mono TC', 'Sarasa Mono TC Nerd Font', 'Segoe UI Emoji', 'Noto Sans Mono CJK TC'",
   "terminal.integrated.fontSize": 15,
 
   // terminal color
