@@ -10,7 +10,7 @@ const settingsJson = `{
 
   // main
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.fontFamily": "'Sarasa Mono TC', 'Sarasa Mono TC Nerd Font', 'Apple Color Emoji'",
+  "editor.fontFamily": "'Sarasa Mono TC', 'Sarasa Mono TC Nerd Font', 'Noto Color Emoji'",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
@@ -45,7 +45,7 @@ const settingsJson = `{
   },
 
   // terminal font
-  "terminal.integrated.fontFamily": "'Sarasa Mono TC', 'Sarasa Mono TC Nerd Font', 'Segoe UI Emoji', 'Noto Sans Mono CJK TC'",
+  "terminal.integrated.fontFamily": "'Sarasa Mono TC', 'Sarasa Mono TC Nerd Font', 'Noto Color Emoji'",
   "terminal.integrated.fontSize": 15,
 
   // terminal color
@@ -91,6 +91,12 @@ const settingsJson = `{
 
   // Dockerfile
   "[dockerfile]": {
+    "editor.formatOnSave": false
+  },
+
+  // markdown
+  "[markdown]": {
+    "editor.codeLens": false,
     "editor.formatOnSave": false
   },
 
@@ -172,12 +178,12 @@ const settingsJson = `{
   "namespaceResolver.showMessageOnStatusBar": true,
 
   // [extension] asvetliakov.vscode-neovim
-  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/jonz94/.config/nvim/init.vim",
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.linux": "/home/jonz94/.config/nvim/init.vim",
+  "vscode-neovim.neovimExecutablePaths.darwin": "/Users/jonz94/.local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/jonz94/.config/nvim/vscode-neovim/init.vim",
+  "vscode-neovim.neovimExecutablePaths.linux": "/home/jonz94/.local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.linux": "/home/jonz94/.config/nvim/vscode-neovim/init.vim",
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\\\Users\\\\jonz94\\\\scoop\\\\apps\\\\neovim-nightly\\\\current\\\\bin\\\\nvim.exe",
-  "vscode-neovim.neovimInitVimPaths.win32": "C:\\\\Users\\\\jonz94\\\\AppData\\\\Local\\\\nvim\\\\init.vim",
+  "vscode-neovim.neovimInitVimPaths.win32": "C:\\\\Users\\\\jonz94\\\\AppData\\\\Local\\\\nvim\\\\vscode-neovim\\\\init.vim",
 
   // [extension] vscodevim.vim
   "vim.leader": " ",
