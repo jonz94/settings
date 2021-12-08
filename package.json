@@ -19,7 +19,7 @@
     "shiki": "^0.9.14"
   },
   "devDependencies": {
-    "@types/node": "^16.11.11",
+    "@types/node": "^16.11.12",
     "@types/react": "^17.0.37",
     "autoprefixer": "^10.4.0",
     "eslint": "^8.4.1",
