@@ -2,12 +2,6 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { SettingsJsonData } from '../../interfaces/settingsJsonData'
 
 const settingsJson = `{
-  // disable navigation breadcrumbs
-  "breadcrumbs.enabled": false,
-
-  // make the diff editor not to ignores changes in leading or trailing whitespace
-  "diffEditor.ignoreTrimWhitespace": false,
-
   // main
   "editor.cursorSmoothCaretAnimation": true,
   "editor.fontFamily": "'Sarasa Mono TC', 'Sarasa Mono TC Nerd Font', 'Noto Color Emoji'",
@@ -22,15 +16,24 @@ const settingsJson = `{
   "editor.smoothScrolling": true,
   "editor.wordWrap": "on",
 
-  // manually configure file associations to languages
-  "files.associations": {
-    "composer.lock": "json"
-  },
+  // disable navigation breadcrumbs
+  "breadcrumbs.enabled": false,
+
+  // scroll related settings
+  "editor.cursorSurroundingLines": 5,
+  "editor.cursorSurroundingLinesStyle": "all",
+  "editor.scrollBeyondLastLine": false,
 
   // git related
   "git.ignoreMissingGitWarning": true,
   "git.inputValidationLength": 72,
   "git.inputValidationSubjectLength": null,
+
+  // git commit message input font
+  "scm.inputFontFamily": "'Sarasa Mono TC', 'Sarasa Mono TC Nerd Font', 'Noto Color Emoji'",
+
+  // make the diff editor not to ignores changes in leading or trailing whitespace
+  "diffEditor.ignoreTrimWhitespace": false,
 
   // disable telemetry
   "telemetry.telemetryLevel": "off",
@@ -89,6 +92,11 @@ const settingsJson = `{
   // zoom in!
   "window.zoomLevel": 2,
 
+  // manually configure file associations to languages
+  "files.associations": {
+    "composer.lock": "json"
+  },
+
   // Dockerfile
   "[dockerfile]": {
     "editor.formatOnSave": false
@@ -96,8 +104,7 @@ const settingsJson = `{
 
   // markdown
   "[markdown]": {
-    "editor.codeLens": false,
-    "editor.formatOnSave": false
+    "editor.codeLens": false
   },
 
   // prettier
@@ -122,6 +129,9 @@ const settingsJson = `{
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
@@ -233,7 +243,13 @@ const settingsJson = `{
   },
 
   // [extension] onecentlin.laravel-blade
-  "blade.format.enable": true
+  "blade.format.enable": true,
+
+  // [extension] ms-vscode.powershell
+  "powershell.integratedConsole.showOnStartup": false,
+  "powershell.promptToUpdatePowerShell": false,
+  "powershell.codeFormatting.preset": "OTBS",
+  "powershell.codeFormatting.useCorrectCasing": true
 }
 `
 
