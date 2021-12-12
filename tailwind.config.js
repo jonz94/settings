@@ -1,8 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
     extend: {
@@ -12,9 +11,6 @@ module.exports = {
         mono: ['"Sarasa Mono TC Nerd Font"', ...defaultTheme.fontFamily.mono],
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [require('daisyui')],
   daisyui: {
