@@ -232,9 +232,7 @@ const settingsJson = `{
 
   // [extension] be5invis.vscode-custom-css
   "vscode_custom_css.imports": [
-    "file:///home/jonz94/dotfiles/vscode/jonz94.css",
-    "file:///Users/jonz94/dotfiles/vscode/jonz94.css",
-    "file:///C:/Users/jonz94/dotfiles/vscode/jonz94.css"
+    "https://raw.githubusercontent.com/jonz94/dotfiles/main/vscode/jonz94.css"
   ],
 
   // [extension] bradlc.vscode-tailwindcss
