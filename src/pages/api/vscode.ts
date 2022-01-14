@@ -192,7 +192,7 @@ const settingsJson = `{
   "vscode-neovim.neovimInitVimPaths.darwin": "/Users/jonz94/.config/nvim/vscode-neovim/init.vim",
   "vscode-neovim.neovimExecutablePaths.linux": "/home/jonz94/.local/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.linux": "/home/jonz94/.config/nvim/vscode-neovim/init.vim",
-  "vscode-neovim.neovimExecutablePaths.win32": "C:\\\\Users\\\\jonz94\\\\scoop\\\\apps\\\\neovim-nightly\\\\current\\\\bin\\\\nvim.exe",
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\\\Users\\\\jonz94\\\\scoop\\\\apps\\\\neovim-bare-nightly\\\\current\\\\bin\\\\nvim.exe",
   "vscode-neovim.neovimInitVimPaths.win32": "C:\\\\Users\\\\jonz94\\\\AppData\\\\Local\\\\nvim\\\\vscode-neovim\\\\init.vim",
 
   // [extension] vscodevim.vim
