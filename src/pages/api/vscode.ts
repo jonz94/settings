@@ -102,6 +102,11 @@ const settingsJson = `{
     "editor.formatOnSave": false
   },
 
+  // lua
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+
   // markdown
   "[markdown]": {
     "editor.codeLens": false
