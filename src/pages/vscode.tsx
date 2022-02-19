@@ -22,7 +22,7 @@ const VSCodePage: NextPage = () => {
   useEffect(() => {
     Promise.all([getShikiHighlighter(), fetchData()]).then(
       ([highlighter, code]) => {
-        setSettingsJson(highlighter.codeToHtml(code, 'jsonc'))
+        setSettingsJson(highlighter.codeToHtml(code, { lang: 'jsonc' }))
       },
     )
   }, [])
