@@ -34,12 +34,12 @@ const VSCodePage: NextPage = () => {
         <meta name="description" content="jonz94's vscode setting" />
       </Head>
 
-      <div className="p-0 w-full md:p-4 hero-content">
-        <div className="flex flex-col w-full">
-          <h1 className="mb-5 text-5xl font-bold text-center">
+      <div className="hero-content w-full p-0 md:p-4">
+        <div className="flex w-full flex-col">
+          <h1 className="mb-5 text-center text-5xl font-bold">
             VSCode Settings
           </h1>
-          <p className="mb-5 text-xl text-center">settings.json</p>
+          <p className="mb-5 text-center text-xl">settings.json</p>
           <CodeBlock settingsJson={settingsJson} />
         </div>
       </div>

@@ -3,29 +3,29 @@ import { FC } from 'react'
 
 const Navbar: FC = () => {
   return (
-    <nav className="m-4 shadow-lg navbar bg-neutral text-neutral-content rounded-box">
-      <div className="flex-none px-2 mx-2">
+    <nav className="navbar rounded-box m-4 bg-neutral text-neutral-content shadow-lg">
+      <div className="mx-2 flex-none px-2">
         <Link href="/">
           <a className="text-lg font-bold text-primary">Settings</a>
         </Link>
       </div>
-      <div className="flex-1 px-2 mx-2">
+      <div className="mx-2 flex-1 px-2">
         <div className="hidden items-stretch sm:flex">
           <Link href="/vscode">
-            <a className="btn btn-ghost btn-sm rounded-btn">vscode</a>
+            <a className="btn btn-ghost rounded-btn btn-sm">vscode</a>
           </Link>
           <Link href="/windows-terminal">
-            <a className="btn btn-ghost btn-sm rounded-btn">windows terminal</a>
+            <a className="btn btn-ghost rounded-btn btn-sm">windows terminal</a>
           </Link>
         </div>
       </div>
       <div className="flex-none">
-        <button className="btn btn-square btn-ghost">
+        <button className="btn btn-ghost btn-square">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            className="inline-block w-6 h-6 stroke-current"
+            className="inline-block h-6 w-6 stroke-current"
           >
             <path
               strokeLinecap="round"
@@ -35,12 +35,12 @@ const Navbar: FC = () => {
             ></path>
           </svg>
         </button>
-        <button className="btn btn-square btn-ghost">
+        <button className="btn btn-ghost btn-square">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            className="inline-block w-6 h-6 stroke-current"
+            className="inline-block h-6 w-6 stroke-current"
           >
             <path
               strokeLinecap="round"
@@ -51,12 +51,12 @@ const Navbar: FC = () => {
           </svg>
         </button>
 
-        <button className="flex sm:hidden btn btn-square btn-ghost">
+        <button className="btn btn-ghost btn-square flex sm:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            className="inline-block w-6 h-6 stroke-current"
+            className="inline-block h-6 w-6 stroke-current"
           >
             <path
               strokeLinecap="round"

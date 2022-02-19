@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div
       data-theme={darkModeActive ? 'forest' : 'emerald'}
-      className="text-base-content bg-base-100"
+      className="bg-base-100 text-base-content"
     >
       <Layout>
         <Component {...pageProps} />

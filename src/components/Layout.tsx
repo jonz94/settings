@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 
 const Layout: FC = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col">
       <Head>
         <title>Settings by jonz94</title>
         <meta name="description" content="settings by jonz94" />
@@ -13,7 +13,7 @@ const Layout: FC = ({ children }) => {
       </Head>
 
       <Navbar />
-      <main className="flex-1 hero">{children}</main>
+      <main className="hero flex-1">{children}</main>
       <Footer />
     </div>
   )
