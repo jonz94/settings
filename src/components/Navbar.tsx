@@ -12,10 +12,10 @@ const Navbar: FC = () => {
       <div className="mx-2 flex-1 px-2">
         <div className="hidden items-stretch sm:flex">
           <Link href="/vscode">
-            <a className="btn btn-ghost rounded-btn btn-sm">vscode</a>
+            <a className="btn btn-ghost btn-sm rounded-btn">vscode</a>
           </Link>
           <Link href="/windows-terminal">
-            <a className="btn btn-ghost rounded-btn btn-sm">windows terminal</a>
+            <a className="btn btn-ghost btn-sm rounded-btn">windows terminal</a>
           </Link>
         </div>
       </div>
