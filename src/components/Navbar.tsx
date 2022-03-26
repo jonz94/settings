@@ -3,7 +3,7 @@ import { FC } from 'react'
 
 const Navbar: FC = () => {
   return (
-    <nav className="navbar rounded-box m-4 bg-neutral text-neutral-content shadow-lg">
+    <nav className="navbar rounded-box m-4 w-[calc(100%-2rem)] bg-neutral text-neutral-content shadow-lg">
       <div className="mx-2 flex-none px-2">
         <Link href="/">
           <a className="text-lg font-bold text-primary">Settings</a>
