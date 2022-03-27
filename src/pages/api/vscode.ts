@@ -94,6 +94,7 @@ const settingsJson = `{
 
   // manually configure file associations to languages
   "files.associations": {
+    "*.xccolortheme": "xml",
     "composer.lock": "json"
   },
 
@@ -150,6 +151,7 @@ const settingsJson = `{
     "dotenv": "tune"
   },
   "material-icon-theme.files.associations": {
+    "*.keystore": "key",
     "docker-compose.alpha.yml": "docker",
     "docker-compose.next.yml": "docker"
   },
