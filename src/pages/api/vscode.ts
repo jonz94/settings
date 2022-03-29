@@ -259,13 +259,31 @@ const settingsJson = `{
   // [extension] jgclark.vscode-todo-highlight
   "todohighlight.keywords": [
     {
-      "text": "NOTE:",
+      "text": "TODO(string):",
+      "regex": {
+        "pattern": "(?<=^|\\"|\\\\s)TODO(\\\\([A-Za-z0-9-]+\\\\))?:"
+      },
+      "color": "#fff",
+      "backgroundColor": "#ffbd2a",
+      "overviewRulerColor": "rgba(255,189,42,0.8)"
+    },
+    {
+      "text": "FIXME(string):",
+      "regex": {
+        "pattern": "(?<=^|\\"|\\\\s)FIXME(\\\\([A-Za-z0-9-]+\\\\))?:"
+      },
+      "color": "#fff",
+      "backgroundColor": "#f06292",
+      "overviewRulerColor": "rgba(240,98,146,0.8)"
+    },
+    {
+      "text": "NOTE(string):",
+      "regex": {
+        "pattern": "(?<=^|\\"|\\\\s)NOTE(\\\\([A-Za-z0-9-]+\\\\))?:"
+      },
       "color": "white",
       "backgroundColor": "#6fb4c0",
       "overviewRulerColor": "grey",
-      "regex": {
-        "pattern": "(?<=^|\\"|\\\\s)NOTE[:]?(?!\\\\w)"
-      },
       "isWholeLine": false
     }
   ]
