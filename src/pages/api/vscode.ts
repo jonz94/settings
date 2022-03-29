@@ -254,7 +254,21 @@ const settingsJson = `{
   "powershell.integratedConsole.showOnStartup": false,
   "powershell.promptToUpdatePowerShell": false,
   "powershell.codeFormatting.preset": "OTBS",
-  "powershell.codeFormatting.useCorrectCasing": true
+  "powershell.codeFormatting.useCorrectCasing": true,
+
+  // [extension] jgclark.vscode-todo-highlight
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "color": "white",
+      "backgroundColor": "#6fb4c0",
+      "overviewRulerColor": "grey",
+      "regex": {
+        "pattern": "(?<=^|\\"|\\\\s)NOTE[:]?(?!\\\\w)"
+      },
+      "isWholeLine": false
+    }
+  ]
 }
 `
 
