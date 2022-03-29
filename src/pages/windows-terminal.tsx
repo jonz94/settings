@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { getHighlighter, setCDN } from 'shiki'
 import CodeBlock from '../components/CodeBlock'
@@ -34,8 +35,17 @@ const WindowsTerminalPage: NextPage = () => {
 
       <div className="hero-content w-full p-0 md:p-4">
         <div className="flex w-full flex-col">
-          <h1 className="mb-5 text-center text-5xl font-bold">Windows Terminal Settings</h1>
-          <p className="mb-5 text-center text-xl">settings.json</p>
+          <h1 className="text-center text-5xl font-bold">Windows Terminal Settings</h1>
+          <p className="my-6 text-center text-xl">Screenshots</p>
+          <Image
+            className="rounded-none md:rounded-lg"
+            src="https://i.imgur.com/D8G6EiF.png"
+            alt="screenshot of jonz94's windows terminal"
+            width={1347}
+            height={924}
+            priority
+          />
+          <p className="my-6 text-center text-xl">settings.json</p>
           <CodeBlock settingsJson={settingsJson} />
         </div>
       </div>
