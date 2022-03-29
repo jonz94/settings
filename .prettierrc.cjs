@@ -1,7 +1,7 @@
 module.exports = {
-  printWidth: 80,
+  printWidth: 120,
   semi: false,
   singleQuote: true,
   trailingComma: 'all',
-  plugins: [require('./.prettier-plugins.js')],
+  plugins: [require('./.prettier-plugins-workaround.cjs')],
 }
