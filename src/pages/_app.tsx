@@ -8,10 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const { darkModeActive } = useDarkMode()
 
   return (
-    <div
-      data-theme={darkModeActive ? 'forest' : 'emerald'}
-      className="bg-base-100 text-base-content"
-    >
+    <div data-theme={darkModeActive ? 'forest' : 'emerald'} className="bg-base-100 text-base-content">
       <Layout>
         <Component {...pageProps} />
       </Layout>

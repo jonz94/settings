@@ -10,9 +10,7 @@ const CodeBlock: FC<Props> = (props) => {
   return (
     <>
       <div
-        className={`${
-          isLoading ? 'hidden' : ''
-        } text-md mx-auto whitespace-pre-wrap sm:text-lg md:text-xl`}
+        className={`${isLoading ? 'hidden' : ''} text-md mx-auto whitespace-pre-wrap sm:text-lg md:text-xl`}
         dangerouslySetInnerHTML={{ __html: props.settingsJson }}
       ></div>
       <div className={isLoading ? '' : 'hidden'}>

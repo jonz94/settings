@@ -272,9 +272,6 @@ const settingsJson = `{
 }
 `
 
-export default function handler(
-  _req: NextApiRequest,
-  res: NextApiResponse<SettingsJsonData>,
-) {
+export default function handler(_req: NextApiRequest, res: NextApiResponse<SettingsJsonData>) {
   res.status(200).json({ settingsJson })
 }
