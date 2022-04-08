@@ -80,6 +80,10 @@ const settingsJson = `{
   // start without any editor
   "workbench.startupEditor": "none",
 
+  // disable keyboard navigation in lists and trees triggered simply by typing
+  // this will enable vscode neovim's explorer list navigation feature
+  "workbench.list.automaticKeyboardNavigation": false,
+
   // smooth scrolling
   "workbench.list.smoothScrolling": true,
 
