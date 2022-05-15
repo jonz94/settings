@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { SettingsJsonData } from '../../interfaces/settingsJsonData'
+import { SettingsJsonData } from '../../models/SettingsJsonData'
 
 const settingsJson = `{
   "$help": "https://aka.ms/terminal-documentation",
