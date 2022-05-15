@@ -120,6 +120,9 @@ const settingsJson = `{
   // prettier
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -133,6 +136,9 @@ const settingsJson = `{
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[php]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
