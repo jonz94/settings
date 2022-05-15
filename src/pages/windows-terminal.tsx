@@ -3,8 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { getHighlighter, setCDN } from 'shiki'
-import CodeBlock from '../components/CodeBlock'
-import { SettingsJsonData } from '../models/SettingsJsonData'
+import CodeBlock from '~/components/CodeBlock'
+import { SettingsJsonData } from '~/models/SettingsJsonData'
 
 async function fetchData() {
   const response = await fetch('/api/windows-terminal')
