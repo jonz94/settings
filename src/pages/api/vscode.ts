@@ -189,6 +189,9 @@ const settingsJson = `{
   "docthis.includeMemberOfOnInterfaceMembers": false,
   "docthis.inferTypesFromNames": true,
 
+  // [extension] eamodio.gitlens
+  "gitlens.codeLens.enabled": false,
+
   // [extension] mhutchie.git-graph
   "git-graph.date.format": "Relative",
 
