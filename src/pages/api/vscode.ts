@@ -154,6 +154,46 @@ const settingsJson = `{
   // color theme: [extension] zhuangtongfa.material-theme
   "workbench.colorTheme": "One Dark Pro",
 
+  // enable semantic token
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true
+  },
+
+  // tweak color theme
+  "editor.tokenColorCustomizations": {
+    "[One Dark Pro]": {
+      "keywords": {
+        "fontStyle": "bold"
+      },
+      "textMateRules": [
+        {
+          "scope": "keyword.control.conditional",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "variable.language",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "variable.other.constant",
+          "settings": {
+            "foreground": "#e06c75"
+          }
+        },
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "foreground": "#d19a66"
+          }
+        }
+      ]
+    }
+  },
+
   // icon theme: [extension] pkief.material-icon-theme
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "angular_ngrx",
@@ -260,6 +300,11 @@ const settingsJson = `{
     "typescript": "javascript"
   },
 
+  // [extension] sumneko.lua
+  "Lua.diagnostics.globals": ["vim"],
+  "Lua.runtime.version": "LuaJIT",
+  "Lua.telemetry.enable": false,
+
   // [extension] onecentlin.laravel-blade
   "blade.format.enable": true,
 
@@ -268,6 +313,12 @@ const settingsJson = `{
   "powershell.promptToUpdatePowerShell": false,
   "powershell.codeFormatting.preset": "OTBS",
   "powershell.codeFormatting.useCorrectCasing": true,
+
+  // [extension] nrwl.angular-console
+  "nxConsole.enableTelemetry": false,
+
+  // [extension] ultram4rine.vscode-choosealicense
+  "license.default": "Unlicense",
 
   // [extension] jgclark.vscode-todo-highlight
   "todohighlight.keywords": [
