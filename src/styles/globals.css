@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 pre.shiki {
-  @apply min-h-screen w-full whitespace-pre-wrap rounded-none bg-[#282c34] p-4 md:w-[44rem] md:rounded-lg md:p-8 lg:w-[56rem] xl:w-[72rem] 2xl:w-[88rem];
+  @apply min-h-screen w-full whitespace-pre-wrap rounded-none bg-[#282c34] p-4 md:w-[44rem] md:rounded-lg md:p-8 lg:w-[56rem] xl:w-[72rem];
 }
