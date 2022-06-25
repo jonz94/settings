@@ -3,5 +3,6 @@ module.exports = {
   semi: false,
   singleQuote: true,
   trailingComma: 'all',
-  plugins: [require('./.prettier-plugins-workaround.cjs')],
+
+  plugins: [require('prettier-plugin-packagejson'), require('./.prettier-plugins-workaround.cjs')],
 }

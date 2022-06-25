@@ -1,9 +1,13 @@
 import Head from 'next/head'
-import { FC } from 'react'
+import { FC, PropsWithChildren } from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 
-const Layout: FC = ({ children }) => {
+type Props = {
+  children?: React.ReactNode
+}
+
+const Layout: FC<PropsWithChildren<Props>> = ({ children }: Props) => {
   return (
     <div className="flex min-h-screen flex-col">
       <Head>
