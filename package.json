@@ -2,7 +2,7 @@
   "name": "settings",
   "version": "0.1.0",
   "private": true,
-  "license": "Unlicense",
+  "license": "0BSD",
   "author": "jonz94 <jody16888@gmail.com>",
   "scripts": {
     "build": "next build",
