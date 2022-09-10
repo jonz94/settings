@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/node': ^16.11.47
+  '@types/node': ^16.11.58
   '@types/react': ^18.0.17
   autoprefixer: ^10.4.8
   daisyui: ^2.22.0
@@ -29,7 +29,7 @@ dependencies:
   shiki: 0.10.1
 
 devDependencies:
-  '@types/node': 16.11.47
+  '@types/node': 16.11.58
   '@types/react': 18.0.17
   autoprefixer: 10.4.8_postcss@8.4.16
   eslint: 8.21.0
@@ -41,7 +41,7 @@ devDependencies:
   prettier-plugin-organize-imports: 3.0.3_gd3y7r3s3evy6b2vthd7dmacga
   prettier-plugin-packagejson: 2.2.18_prettier@2.7.1
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
-  tailwindcss: 3.1.8
+  tailwindcss: 3.1.8_postcss@8.4.16
   typescript: 4.7.4
 
 packages:
@@ -245,7 +245,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 16.11.47
+      '@types/node': 16.11.58
     dev: true
 
   /@types/json5/0.0.29:
@@ -256,8 +256,8 @@ packages:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
     dev: true
 
-  /@types/node/16.11.47:
-    resolution: {integrity: sha512-fpP+jk2zJ4VW66+wAMFoBJlx1bxmBKx4DUFf68UHgdGCOuyUTDlLWqsaNPJh7xhNDykyJ9eIzAygilP/4WoN8g==}
+  /@types/node/16.11.58:
+    resolution: {integrity: sha512-uMVxJ111wpHzkx/vshZFb6Qni3BOMnlWLq7q9jrwej7Yw/KvjsEbpxCCxw+hLKxexFMc8YmpG8J9tnEe/rKsIg==}
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -622,7 +622,7 @@ packages:
       css-selector-tokenizer: 0.8.0
       postcss: 8.4.16
       postcss-js: 4.0.0_postcss@8.4.16
-      tailwindcss: 3.1.8
+      tailwindcss: 3.1.8_postcss@8.4.16
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -2186,10 +2186,12 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /tailwindcss/3.1.8:
+  /tailwindcss/3.1.8_postcss@8.4.16:
     resolution: {integrity: sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==}
     engines: {node: '>=12.13.0'}
     hasBin: true
+    peerDependencies:
+      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
