@@ -16,7 +16,7 @@
     "next": "^12.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "shiki": "^0.10.1"
+    "shiki": "^0.11.1"
   },
   "devDependencies": {
     "@types/node": "^16.11.60",
