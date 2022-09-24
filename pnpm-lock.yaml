@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/node': ^16.11.58
+  '@types/node': ^16.11.60
   '@types/react': ^18.0.18
   autoprefixer: ^10.4.8
   daisyui: ^2.25.0
@@ -29,7 +29,7 @@ dependencies:
   shiki: 0.10.1
 
 devDependencies:
-  '@types/node': 16.11.58
+  '@types/node': 16.11.60
   '@types/react': 18.0.18
   autoprefixer: 10.4.8_postcss@8.4.16
   eslint: 8.23.0
@@ -250,7 +250,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 16.11.58
+      '@types/node': 16.11.60
     dev: true
 
   /@types/json5/0.0.29:
@@ -261,8 +261,8 @@ packages:
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
     dev: true
 
-  /@types/node/16.11.58:
-    resolution: {integrity: sha512-uMVxJ111wpHzkx/vshZFb6Qni3BOMnlWLq7q9jrwej7Yw/KvjsEbpxCCxw+hLKxexFMc8YmpG8J9tnEe/rKsIg==}
+  /@types/node/16.11.60:
+    resolution: {integrity: sha512-kYIYa1D1L+HDv5M5RXQeEu1o0FKA6yedZIoyugm/MBPROkLpX4L7HRxMrPVyo8bnvjpW/wDlqFNGzXNMb7AdRw==}
     dev: true
 
   /@types/prop-types/15.7.5:
