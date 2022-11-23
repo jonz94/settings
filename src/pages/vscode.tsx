@@ -6,24 +6,35 @@ import { getHighlighter, setCDN } from 'shiki'
 import CodeBlock from '~/components/CodeBlock'
 import { SettingsJsonData } from '~/models/SettingsJsonData'
 
-async function fetchData() {
-  const response = await fetch('/api/vscode')
-  const data = (await response.json()) as SettingsJsonData
-  return data.settingsJson
-}
-
 async function getShikiHighlighter() {
   setCDN('https://unpkg.com/shiki/')
   return getHighlighter({ theme: 'one-dark-pro', langs: ['jsonc'] })
 }
 
+async function fetchSettingsData() {
+  const response = await fetch('/api/vscode')
+  const data = (await response.json()) as SettingsJsonData
+  return data.settingsJson
+}
+
+async function fetchKeybindingsData() {
+  const response = await fetch('/api/vscode-keybindings')
+  const data = (await response.json()) as SettingsJsonData
+  return data.settingsJson
+}
+
 const VSCodePage: NextPage = () => {
   const [settingsJson, setSettingsJson] = useState('')
+  const [keybindingsJson, setKeybindingsJson] = useState('')
 
   useEffect(() => {
-    Promise.all([getShikiHighlighter(), fetchData()]).then(([highlighter, code]) => {
-      setSettingsJson(highlighter.codeToHtml(code, { lang: 'jsonc' }))
-    })
+    // TODO: replace with Promise.allSettled() & error handling
+    Promise.all([getShikiHighlighter(), fetchSettingsData(), fetchKeybindingsData()]).then(
+      ([highlighter, settingsCode, keybindingsCode]) => {
+        setSettingsJson(highlighter.codeToHtml(settingsCode, { lang: 'jsonc' }))
+        setKeybindingsJson(highlighter.codeToHtml(keybindingsCode, { lang: 'jsonc' }))
+      },
+    )
   }, [])
 
   return (
@@ -47,6 +58,8 @@ const VSCodePage: NextPage = () => {
           />
           <p className="my-6 text-center text-xl">settings.json</p>
           <CodeBlock settingsJson={settingsJson} />
+          <p className="my-6 text-center text-xl">keybindings.json</p>
+          <CodeBlock settingsJson={keybindingsJson} />
         </div>
       </div>
     </>
