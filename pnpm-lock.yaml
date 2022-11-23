@@ -18,7 +18,7 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   shiki: ^0.11.1
-  tailwindcss: ^3.2.2
+  tailwindcss: ^3.2.4
   typescript: ^4.8.4
 
 dependencies:
@@ -41,7 +41,7 @@ devDependencies:
   prettier-plugin-organize-imports: 3.2.0_jc3kjthrexpo2i3acrbjrjqijq
   prettier-plugin-packagejson: 2.3.0_prettier@2.8.0
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.8.0
-  tailwindcss: 3.2.2_postcss@8.4.19
+  tailwindcss: 3.2.4_postcss@8.4.19
   typescript: 4.8.4
 
 packages:
@@ -637,7 +637,7 @@ packages:
       css-selector-tokenizer: 0.8.0
       postcss: 8.4.19
       postcss-js: 4.0.0_postcss@8.4.19
-      tailwindcss: 3.2.2_postcss@8.4.19
+      tailwindcss: 3.2.4_postcss@8.4.19
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -2253,8 +2253,8 @@ packages:
       tslib: 2.4.0
     dev: true
 
-  /tailwindcss/3.2.2_postcss@8.4.19:
-    resolution: {integrity: sha512-c2GtSdqg+harR4QeoTmex0Ngfg8IIHNeLQH5yr2B9uZbZR1Xt1rYbjWOWTcj3YLTZhrmZnPowoQDbSRFyZHQ5Q==}
+  /tailwindcss/3.2.4_postcss@8.4.19:
+    resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
