@@ -5,17 +5,17 @@ const Navbar: FC = () => {
   return (
     <nav className="navbar rounded-box m-4 w-[calc(100%-2rem)] bg-neutral text-neutral-content shadow-lg">
       <div className="mx-2 flex-none px-2">
-        <Link href="/">
-          <a className="text-lg font-bold text-primary">Settings</a>
+        <Link href="/" className="text-lg font-bold text-primary">
+          Settings
         </Link>
       </div>
       <div className="mx-2 flex-1 px-2">
         <div className="hidden items-stretch sm:flex">
-          <Link href="/vscode">
-            <a className="btn-ghost rounded-btn btn-sm btn">vscode</a>
+          <Link href="/vscode" className="btn-ghost rounded-btn btn-sm btn">
+            vscode
           </Link>
-          <Link href="/windows-terminal">
-            <a className="btn-ghost rounded-btn btn-sm btn">windows terminal</a>
+          <Link href="/windows-terminal" className="btn-ghost rounded-btn btn-sm btn">
+            windows terminal
           </Link>
         </div>
       </div>
