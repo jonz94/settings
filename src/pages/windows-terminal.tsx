@@ -12,7 +12,7 @@ async function fetchData() {
   return data.settingsJson
 }
 
-async function getShikiHighlighter() {
+function getShikiHighlighter() {
   setCDN('https://unpkg.com/shiki/')
   return getHighlighter({ theme: 'one-dark-pro', langs: ['jsonc'] })
 }

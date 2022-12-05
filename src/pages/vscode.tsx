@@ -6,7 +6,7 @@ import { getHighlighter, setCDN } from 'shiki'
 import CodeBlock from '~/components/CodeBlock'
 import { SettingsJsonData } from '~/models/SettingsJsonData'
 
-async function getShikiHighlighter() {
+function getShikiHighlighter() {
   setCDN('https://unpkg.com/shiki/')
   return getHighlighter({ theme: 'one-dark-pro', langs: ['jsonc'] })
 }
