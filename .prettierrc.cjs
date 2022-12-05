@@ -5,5 +5,6 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'all',
 
-  plugins: [require('prettier-plugin-packagejson'), require('./.prettier-plugins-workaround.cjs')],
+  pluginSearchDirs: false,
+  plugins: [require('prettier-plugin-packagejson'), require('prettier-plugin-organize-imports')],
 }
