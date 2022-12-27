@@ -18,7 +18,7 @@ specifiers:
   prettier-plugin-packagejson: ^2.3.0
   react: ^18.2.0
   react-dom: ^18.2.0
-  sharp: ^0.31.2
+  sharp: ^0.31.3
   shiki: ^0.11.1
   tailwindcss: ^3.2.4
   typescript: ^4.9.4
@@ -28,7 +28,7 @@ dependencies:
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  sharp: 0.31.2
+  sharp: 0.31.3
   shiki: 0.11.1
 
 devDependencies:
@@ -2274,8 +2274,8 @@ packages:
     resolution: {integrity: sha512-1jeBGaKNGdEq4FgIrORu/N570dwoPYio8lSoYLWmX7sQ//0JY08Xh9o5pBcgmHQ/MbsYp/aZnOe1s1lIsbLprQ==}
     dev: true
 
-  /sharp/0.31.2:
-    resolution: {integrity: sha512-DUdNVEXgS5A97cTagSLIIp8dUZ/lZtk78iNVZgHdHbx1qnQR7JAHY0BnXnwwH39Iw+VKhO08CTYhIg0p98vQ5Q==}
+  /sharp/0.31.3:
+    resolution: {integrity: sha512-XcR4+FCLBFKw1bdB+GEhnUNXNXvnt0tDo4WsBsraKymuo/IAuPuCBVAL2wIkUw2r/dwFW5Q5+g66Kwl2dgDFVg==}
     engines: {node: '>=14.15.0'}
     requiresBuild: true
     dependencies:
