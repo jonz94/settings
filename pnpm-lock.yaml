@@ -5,7 +5,7 @@ specifiers:
   '@types/prettier': ^2.7.2
   '@types/react': ^18.0.27
   autoprefixer: ^10.4.13
-  daisyui: ^2.46.0
+  daisyui: ^2.50.0
   eslint: ^8.30.0
   eslint-config-next: ^13.1.1
   eslint-config-prettier: ^8.5.0
@@ -24,7 +24,7 @@ specifiers:
   typescript: ^4.9.4
 
 dependencies:
-  daisyui: 2.46.0_r4gnkvssmvyxmi2wmat5xbx36a
+  daisyui: 2.50.0_r4gnkvssmvyxmi2wmat5xbx36a
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -667,8 +667,8 @@ packages:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
     dev: true
 
-  /daisyui/2.46.0_r4gnkvssmvyxmi2wmat5xbx36a:
-    resolution: {integrity: sha512-7L+KMCADsAmZkJUIabgDSpqEF9+uVPvyJSkSieOpY2WKeDd2pvcELZMs/AKaKkB5gcrb9cPP9vFdLXeDFJj90g==}
+  /daisyui/2.50.0_r4gnkvssmvyxmi2wmat5xbx36a:
+    resolution: {integrity: sha512-KiqRvqMXi9rgoH84M8D69gXPg6x+cbdiaHqm8pFHOsXXN1rTl/+OcCKkSnkEwTtIge9VJVDGU6l4B8/n+Juc5g==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
